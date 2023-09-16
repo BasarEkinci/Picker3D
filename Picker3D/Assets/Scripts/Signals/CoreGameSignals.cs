@@ -6,6 +6,9 @@ namespace Signals
 {
     public class CoreGameSignals : MonoBehaviour
     {
+
+        #region Singelton
+
         public static CoreGameSignals Instance;
 
         private void Awake()
@@ -17,12 +20,13 @@ namespace Signals
             else
                 Instance = this;
         }
-        
-        public UnityAction<byte> OnLevelInitialize = delegate {  };
-        public UnityAction OnClearActiveLevel = delegate {  };
-        public UnityAction OnNextLevel = delegate {  };
-        public UnityAction OnRestartLevel = delegate {  };
-        public UnityAction onReset = delegate {  };
+
+        #endregion
+        public UnityAction<byte> OnLevelInitialize = delegate { };
+        public UnityAction OnClearActiveLevel = delegate { };
+        public UnityAction OnNextLevel = delegate { };
+        public UnityAction OnRestartLevel = delegate { };
+        public UnityAction OnReset = delegate { };
         public Func<byte> OnGetLevelValue = delegate { return 0; };
     }
 }

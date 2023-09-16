@@ -62,13 +62,13 @@ namespace Managers
         {
             _currentLevel++;
             CoreGameSignals.Instance.OnClearActiveLevel?.Invoke();
-            CoreGameSignals.Instance.onReset?.Invoke();
+            CoreGameSignals.Instance.OnReset?.Invoke();
             CoreGameSignals.Instance.OnLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount));
         }
         private void OnRestartLevel()
         {
             CoreGameSignals.Instance.OnClearActiveLevel?.Invoke();
-            CoreGameSignals.Instance.onReset?.Invoke();
+            CoreGameSignals.Instance.OnReset?.Invoke();
             CoreGameSignals.Instance.OnLevelInitialize?.Invoke((byte)(_currentLevel % totalLevelCount));
         }
         private void UnsubscribeEvents()
@@ -79,6 +79,5 @@ namespace Managers
             CoreGameSignals.Instance.OnNextLevel -= OnNextLevel;
             CoreGameSignals.Instance.OnRestartLevel -= OnRestartLevel;
         }
-
     }
 }

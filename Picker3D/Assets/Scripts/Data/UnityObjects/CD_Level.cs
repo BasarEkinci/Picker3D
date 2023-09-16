@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Data.ValueObjects;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Data.UnityObjects
 {
