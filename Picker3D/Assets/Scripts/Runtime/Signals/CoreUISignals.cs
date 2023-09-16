@@ -1,9 +1,8 @@
-﻿using System;
-using Enums;
+﻿using Runtime.Enums;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Signals
+namespace Runtime.Signals
 {
     public class CoreUISignals : MonoBehaviour
     {

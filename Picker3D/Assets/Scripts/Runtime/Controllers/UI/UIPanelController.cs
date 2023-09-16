@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Controllers.UI
+namespace Runtime.Controllers.UI
 {
     public class UIPanelController : MonoBehaviour
     {
