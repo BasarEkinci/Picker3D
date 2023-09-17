@@ -24,6 +24,8 @@ namespace Runtime.Signals
         #endregion
         public UnityAction<byte> OnLevelInitialize = delegate { };
         public UnityAction OnClearActiveLevel = delegate { };
+        public UnityAction OnLevelSuccessful = delegate { };
+        public UnityAction OnLevelFailed = delegate { };
         public UnityAction OnNextLevel = delegate { };
         public UnityAction OnRestartLevel = delegate { };
         public UnityAction OnReset = delegate { };
