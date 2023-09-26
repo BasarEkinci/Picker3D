@@ -17,15 +17,7 @@ namespace Runtime.Managers
         {
             Init();
         }
-        private void OnEnable()
-        {
-            SubscribeEvents();
-        }
 
-        private void OnDisable()
-        {
-            UnsubscribeEvents();
-        }
         private void Init()
         {
             _firstPosition = transform.position;
@@ -47,6 +39,15 @@ namespace Runtime.Managers
             transform.position = _firstPosition;
         }
 
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
+
+        private void OnDisable()
+        {
+            UnsubscribeEvents();
+        }
         private void OnSetCameraTarget()
         {
             //var player = FindObjectOfType<PlayerManager>().transform;

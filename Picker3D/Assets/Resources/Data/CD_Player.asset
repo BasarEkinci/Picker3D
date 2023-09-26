@@ -9,8 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b19185f8c464f69b03a5a6bbedb2398, type: 3}
-  m_Name: CD_Level
+  m_Script: {fileID: 11500000, guid: 1f30f0607c7a4c08ba637e2e4a9d5a9b, type: 3}
+  m_Name: CD_Player
   m_EditorClassIdentifier: 
-  Levels:
-  - PoolDatas: []
+  Data:
+    MovementData:
+      ForwardSpeed: 5
+      SidewaySpeed: 3
+    MeshData:
+      ScaleCounter: 1.2
+    ForceData:
+      ForceParameters:
+        x: 0
+        y: 4
+        z: 10
