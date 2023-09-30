@@ -1,27 +1,11 @@
 ﻿using System;
-using UnityEngine;
+using Runtime.Extentions;
 using UnityEngine.Events;
 
 namespace Runtime.Signals
 {
-    public class CoreGameSignals : MonoBehaviour
+    public class CoreGameSignals : MonoSingelton<CoreGameSignals>
     {
-
-        #region Singelton
-
-        public static CoreGameSignals Instance;
-
-        private void Awake()
-        {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(this.gameObject);
-            }
-            else
-                Instance = this;
-        }
-
-        #endregion
         public UnityAction<byte> OnLevelInitialize = delegate { };
         public UnityAction OnClearActiveLevel = delegate { };
         public UnityAction OnLevelSuccessful = delegate { };

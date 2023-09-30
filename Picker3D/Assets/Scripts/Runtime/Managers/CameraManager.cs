@@ -1,9 +1,7 @@
-﻿using System;
-using Cinemachine;
+﻿using Cinemachine;
 using Runtime.Signals;
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 
 namespace Runtime.Managers
 {
