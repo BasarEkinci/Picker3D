@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Runtime.Controllers.Player
 {
-    public class PlayerPhysicsController
+    public class PlayerPhysicsController : MonoBehaviour
     {
         #region Self Variables
 

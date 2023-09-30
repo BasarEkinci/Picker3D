@@ -53,7 +53,7 @@ namespace Runtime.Managers
                     if (_mousePosition != null)
                     {
                         Vector2 mouseDeltaPos = (Vector2) Input.mousePosition -  _mousePosition.Value;
-                        if (mouseDeltaPos.x > _data.HorizontalInputSpeed)
+                        /*if (mouseDeltaPos.x > _data.HorizontalInputSpeed)
                         {
                             _moveVector.x = _data.HorizontalInputSpeed / 10f * mouseDeltaPos.x;
                         }
@@ -71,7 +71,8 @@ namespace Runtime.Managers
                         {
                             HorizontalValue = _moveVector.x,
                             ClampValues = _data.ClampValues
-                        });
+                        });*/
+                        _moveVector.x = mouseDeltaPos.x;
                     }
                 }
             }

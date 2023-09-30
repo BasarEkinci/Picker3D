@@ -54,7 +54,7 @@ namespace Runtime.Managers
             UISignals.Instance.OnPlay?.Invoke();
             CoreUISignals.Instance.OnClosePanel?.Invoke(1);
             InputSignals.Instance.OnEnableInput?.Invoke();
-            //CameraSignals.Instance.OnSetCameraTarget?.Invoke();
+            CameraSignals.Instance.OnSetCameraTarget?.Invoke();
         }
     }
 }
