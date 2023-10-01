@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 1281973911}
   - component: {fileID: 1281973913}
   - component: {fileID: 1281973914}
+  - component: {fileID: 1281973915}
   m_Layer: 0
   m_Name: CameraManager
   m_TagString: Untagged
@@ -442,6 +443,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1281973913}
+--- !u!114 &1281973915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281973910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db37fadeda042e4b33c1bb7cee41d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XClampValue: 0
+  lockAxis: 0
 --- !u!1 &1481277137
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +631,7 @@ GameObject:
   - component: {fileID: 1492612100}
   - component: {fileID: 1492612097}
   - component: {fileID: 1492612099}
+  - component: {fileID: 1492612101}
   m_Layer: 0
   m_Name: UIRoot
   m_TagString: Untagged
@@ -675,6 +691,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e54de804ba458c833de9e1d4bc66eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1492612101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492612094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3683f81dfd846bd952d456b65ff0fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageImages: []
+  levelTexts: []
 --- !u!1 &1516829650
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +792,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516829650}
   m_LocalRotation: {x: -0.105291784, y: 0.8668982, z: -0.20692302, w: -0.44111693}
-  m_LocalPosition: {x: 837.6544, y: 1287.3422, z: 402.3004}
+  m_LocalPosition: {x: 0, y: 1287.3422, z: 402.3004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1038,6 +1068,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1492612098}
     m_Modifications:
+    - target: {fileID: 2207126537246285532, guid: f39fb19bd4bf7eb45885b8ece8c1cd72,
+        type: 3}
+      propertyPath: layers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2207126537246285532, guid: f39fb19bd4bf7eb45885b8ece8c1cd72,
+        type: 3}
+      propertyPath: layers.Array.data[0]
+      value: 
+      objectReference: {fileID: 477392425}
     - target: {fileID: 2245065015421373733, guid: f39fb19bd4bf7eb45885b8ece8c1cd72,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1148,7 +1188,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8442849209667456619, guid: f39fb19bd4bf7eb45885b8ece8c1cd72, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
