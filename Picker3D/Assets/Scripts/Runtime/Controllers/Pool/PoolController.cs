@@ -6,6 +6,7 @@ using Runtime.Data.UnityObjects;
 using Runtime.Data.ValueObjects;
 using Runtime.Signals;
 using TMPro;
+using UnityEngine.Serialization;
 
 namespace Runtime.Controllers.Pool
 {
@@ -18,6 +19,7 @@ namespace Runtime.Controllers.Pool
         [SerializeField] private TextMeshPro poolText;
         [SerializeField] private byte stageID;
         [SerializeField] private Renderer renderer;
+        [SerializeField] private Color poolComletedColor;
         
         #endregion
         
@@ -78,7 +80,7 @@ namespace Runtime.Controllers.Pool
         private void OnActivateTweens(byte stageValue)
         {
             if(stageValue != stageID) return;
-            renderer.material.DOColor(new Color(0.160f,0.60f,0.1766218f), 1f).SetEase(Ease.Linear);;
+            renderer.material.DOColor(new Color(0.2078432f,0.3058824f,0.5294118f), 0.5f).SetEase(Ease.Linear).SetRelative(false);
         }
         private void OnTriggerEnter(Collider other)
         {

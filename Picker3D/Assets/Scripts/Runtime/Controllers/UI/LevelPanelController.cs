@@ -26,7 +26,7 @@ namespace Runtime.Controllers.UI
         {
             stageImages[stageValue].DOColor(new Color(1f,0.4070103f,0,1f), 0.5f);
         }
-        private void OnSetLevelValue(byte levelValue)
+        private void OnSetLevelValue(byte levelValue = 0)
         {
             var additionalValue = ++levelValue;
             levelTexts[0].text = additionalValue.ToString();

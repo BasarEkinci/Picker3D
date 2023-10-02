@@ -45,7 +45,7 @@ namespace Runtime.Managers
         }
         private byte GetActiveLevel()
         {
-            return (byte)_currentLevel;
+            return (byte)(_currentLevel % totalLevelCount);
         }
         private void SubscribeEvents()
         {
