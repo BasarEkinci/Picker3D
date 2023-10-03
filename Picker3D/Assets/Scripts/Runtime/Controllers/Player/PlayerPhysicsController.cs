@@ -1,5 +1,4 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using Runtime.Controllers.Pool;
 using Runtime.Managers;
 using Runtime.Signals;
